@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 
 import { addFoodtoCustomer } from "../redux/CustomerSlice";
 
-type Props = {
+interface Props {
     id: any;
     name: String;
     foods: string[];
