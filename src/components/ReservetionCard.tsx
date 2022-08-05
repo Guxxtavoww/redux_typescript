@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { addCustomer } from "../redux/CustomerSlice";
 import { removeReservetion } from "../redux/ReservetionSlice";
 
-type Props = {
+interface Props {
     name: String;
     index: number;
 }
