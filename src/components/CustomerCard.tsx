@@ -1,15 +1,15 @@
-import { useState } from "react";
+import { useState, FC } from "react";
 import { useDispatch } from "react-redux";
 
 import { addFoodtoCustomer } from "../redux/CustomerSlice";
 
 interface Props {
-    id: any;
+    id: string | number;
     name: String;
     foods: string[];
 }
 
-const CustomerCard = ({ id, name, foods }: Props) => {
+const CustomerCard: FC<Props> = ({ id, name, foods }) => {
     const [ food, setFood ] = useState("");
 
     const dispatch = useDispatch();
