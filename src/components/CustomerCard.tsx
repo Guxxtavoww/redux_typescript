@@ -16,7 +16,7 @@ const CustomerCard: FC<Props> = ({ id, name, foods }) => {
 
     const handleAddFood = () => {
         if(food === "") return;
-        dispatch(addFoodtoCustomer({ id, food}));
+        dispatch(addFoodtoCustomer({ id, food }));
         setFood("");
     }
 

@@ -1,8 +1,8 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 interface Costumer {
-    id: String;
-    name: String;
+    id: string;
+    name: string;
     food: string[];
 }
 
