@@ -1,15 +1,15 @@
-import { useId } from "react";
+import React, { useId } from "react";
 import { useDispatch } from "react-redux";
 
 import { addCustomer } from "../redux/CustomerSlice";
 import { removeReservetion } from "../redux/ReservetionSlice";
 
 interface Props {
-    name: String;
+    name: string;
     index: number;
 }
 
-const ReservetionCard = ({ name, index }: Props) => {
+const ReservetionCard: React.FC<Props> = ({ name, index }) => {
     const id = useId();
     const dispatch = useDispatch();
 

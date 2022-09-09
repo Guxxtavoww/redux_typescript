@@ -5,7 +5,7 @@ import { addFoodtoCustomer } from "../redux/CustomerSlice";
 
 interface Props {
     id: string | number;
-    name: String;
+    name: string;
     foods: string[];
 }
 
