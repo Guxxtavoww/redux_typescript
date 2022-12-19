@@ -4,10 +4,10 @@ import CustomerSlice from "./CustomerSlice";
 import ReservetionSlice from "./ReservetionSlice";
 
 const store = configureStore({
-    reducer: {
-        reservation: ReservetionSlice,
-        customers: CustomerSlice,
-    }
+  reducer: {
+    reservation: ReservetionSlice,
+    customers: CustomerSlice,
+  },
 });
 
 export type AppDispatch = typeof store.dispatch;
